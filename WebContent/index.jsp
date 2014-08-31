@@ -7,7 +7,7 @@
 <%@ page import="helios.date.parsing.DateParser"%>
 <%@ page import="helios.date.interval.Intervals"%>
 <%@ page import="helios.report.parameters.ParameterInfo"%>
-<%@ page import="uac.constants.Constants"%>
+<%@ page import="uac.site.SiteConfig"%>
 <%@ page import="java.util.GregorianCalendar"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="java.util.HashMap"%>
@@ -68,7 +68,7 @@ String lastYearEndParam = dateIntervals.getTimeInterval(Intervals.LAST_YEAR_INTE
 <table width="100%">
 <tr>
 <td align ="left" width="50%"><img src="<%= request.getContextPath() %>/images/site_banner.jpg" width="400" height="72"/></td>
-<!-- <td align="right" width="20%"><b><%= Constants.HELIOS_READABLE_SITE_NAME %></b></td>-->
+<!-- <td align="right" width="20%"><b><%= SiteConfig.HELIOS_READABLE_SITE_NAME %></b></td>-->
 </tr>
 </table>
 
