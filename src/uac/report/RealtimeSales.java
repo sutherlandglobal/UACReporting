@@ -28,7 +28,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.MDC;
 
-import uac.constants.Constants;
+import uac.datasources.DatabaseConfigs;
 
 /**
  * @author Jason Diamond
@@ -39,7 +39,7 @@ public final class RealtimeSales extends Report
 	private RemoteConnection dbConnection;
 	private UACRoster roster;
 	private final static String ORDER_AMTS_ATTR = "orderAmounts";
-	private final String dbPropFile = Constants.PRIVATE_LABEL_PROD_DB;
+	private final String dbPropFile = DatabaseConfigs.PRIVATE_LABEL_PROD_DB;
 	private final static Logger logger = Logger.getLogger(RealtimeSales.class);
 
 	public static String uiGetReportName()

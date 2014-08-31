@@ -23,7 +23,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.MDC;
 
-import uac.constants.Constants;
+import uac.datasources.DatabaseConfigs;
 
 
 /**
@@ -36,7 +36,7 @@ public final class Teams extends Report
 {	
 	private UACRoster roster;
 	private DatabaseConnection dbConnection;
-	private final String dbPropFile = Constants.PRIVATE_LABEL_PROD_DB;
+	private final String dbPropFile = DatabaseConfigs.PRIVATE_LABEL_PROD_DB;
 	private final static Logger logger = Logger.getLogger(Teams.class);
 
 	public static String uiGetReportName()

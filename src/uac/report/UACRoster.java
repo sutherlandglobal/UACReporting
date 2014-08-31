@@ -23,7 +23,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.MDC;
 
-import uac.constants.Constants;
+import uac.datasources.DatabaseConfigs;
 import uac.report.roster.Attributes;
 
 
@@ -38,7 +38,7 @@ import uac.report.roster.Attributes;
 public final class UACRoster extends Roster implements Attributes, Scheduling
 {
 	
-	private final String dbPropFile = Constants.PRIVATE_LABEL_PROD_DB;
+	private final String dbPropFile = DatabaseConfigs.PRIVATE_LABEL_PROD_DB;
 
 	private final static String PROGRAM_NAME = "UAC";
 
