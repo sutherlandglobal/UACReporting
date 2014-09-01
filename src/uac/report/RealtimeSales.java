@@ -203,8 +203,8 @@ public final class RealtimeSales extends Report implements DataAttributes
 				}
 				
 				reportGrainData.addDatum(reportGrain);
-				reportGrainData.getDatum(reportGrain).addAttribute(DataAttributes.SALES_AMTS_ATTR);
-				reportGrainData.getDatum(reportGrain).addData(DataAttributes.SALES_AMTS_ATTR, salesAmount);
+				reportGrainData.getDatum(reportGrain).addAttribute(SALES_AMTS_ATTR);
+				reportGrainData.getDatum(reportGrain).addData(SALES_AMTS_ATTR, salesAmount);
 			}
 		}
 		
