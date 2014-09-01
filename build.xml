@@ -230,6 +230,6 @@
 	</target>
 	
 	<target name="nuke">
-		
+		<delete dir="${SITE_SRC_DIR}"/>
 	</target>
 </project>
