@@ -1,4 +1,4 @@
-package uac.report.roster;
+package com.sutherland.uac.report.roster;
 
 public interface Attributes 
 {
